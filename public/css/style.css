@@ -1,0 +1,60 @@
+body {
+  font-family: 'Amatic SC', cursive;
+  background-color: black;
+}
+
+.character-detail {
+background-color: black;
+color: red;
+border-style: solid;
+border-width: 3px;
+border-color: #0FF16B;
+padding: 5px;
+margin:10px;
+align-items: center;
+text-align: center;
+width: 310px;
+font-size: 1.2em;
+animation: spin 2s;
+}
+
+.title-banner {
+  border-style: solid;
+  border-color: #0FF16B;
+  border-width: 5px;
+  color: #0FD9F1;
+  background-color: black;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  font-size: 3em;
+  animation: flash 1s linear ;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+    0%   {background-color: white;}
+    25%  {background-color: black;}
+    50%  {background-color: white;}
+    100% {background-color: black;}
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#character-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
